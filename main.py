@@ -157,7 +157,7 @@ def run():
                     symbol
                 )
                 if lot > 0.01:
-                    log.warning(f"{symbol} lot too high,lot:{lot} clamping to 0.1")
+                    log.warning(f"{symbol} lot too high,lot:{lot} clamping to 0.01")
                     lot = 0.01
                 log.info(
                     f"{symbol} price:{price} SL:{sl} TP:{tp} "
